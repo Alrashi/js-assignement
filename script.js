@@ -17,7 +17,7 @@ let playerName = "";
 
 //validate player's name is not empty
 while(playerName === ""){
-    playerName = prompt("The game is going to be 5 Rounds! Enter your name!");
+    playerName = prompt("Enter your name!");
 }
 
 //validate user entry
@@ -100,9 +100,9 @@ function checkTheWinner(winner){
 // print the final report
 function printReport(){
     console.log(
-      'Final Results: ' + playerName + ' won ' + playerNumberOfWins + ' games ' + '\n'
-    + 'Computer ' + 'won ' + computerNumberOfWins + ' games' + '\n'
-    + 'Draws ' + numberOfDraws + ' games'
+      'Final Results: \n' + '- ' + playerName + ' won ' + playerNumberOfWins + ' games.' + '\n'
+    + '- Computer ' + 'won ' + computerNumberOfWins + ' games.' + '\n'
+    + '- Draws ' + numberOfDraws + ' games.'
     )
 }
 
