@@ -104,6 +104,15 @@ function printReport(){
     + '- Computer ' + 'won ' + computerNumberOfWins + ' games.' + '\n'
     + '- Draws ' + numberOfDraws + ' games.'
     )
+    if(playerNumberOfWins > computerNumberOfWins){
+        console.log("The final winner is: " + playerName + ". Congratualtions!")
+    }
+    else if (computerNumberOfWins > playerNumberOfWins){
+        console.log("The final winner is: Computer. Good luck next time " + playerName + "!")
+    }
+    else {
+        console.log("There is no Winner! It is a draw!")
+    }
 }
 
 // the main function to play the 5 rounds game
